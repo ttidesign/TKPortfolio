@@ -1,203 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Muli:wght@500&display=swap"
-        rel="stylesheet">
-    <!-- Bootstrap core CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet">
-    <title>TK Website</title>
-</head>
-<body>
-    <!-- NAV SECTION -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="index.html"> <img class='logo' src='./images/TTiD-Wsmall.svg' alt='ttid logo'/> </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item ">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/pages/resume.html">Resume</a>
-            </ul>
-        </div>
-    </nav>
-<!-- INTRO SECTION -->
-    <div>
-        <div class='header'>
-            <div class='style-line'></div>
-            <h6>SOFTWARE DEVELOPER | PRODUCT DESIGNER</h6>
-        </div>
-        <div class='about-me'>
-            <p> Hello! My name is TK </p>
-            <p>
-                I’m a software developer with a background in product design, and I'm
-                confident that I can utilize both to become a better developer and a
-                better designer. I’m looking for an opportunity to apply my skills and
-                knowledge to develop intuitive websites and applications that enhance
-                functionality and improve user experience.
-            </p>
-        </div>
-    </div>
-<!-- SKILLS SECTION -->
-<div class='skills-wrapper'>
-    <div class="thumbnail-container animated fadeInLeft">
-        <div id='apppage' class='skill-box'>
-            <img src='./images/code2.png' alt='coding' />
-            <div class='skill-box-text'>DEVELOPER</div>
-            <span style='font-weight:bold'>
-                Stacks & Programing Languages
-            </span> <br>
-            <span>
-                Javascript, React, Python, Node.js, Express, Django
-            </span> <br>
-            <br>
-            <span style='font-weight:bold'>
-                Developer Tools 
-            </span> <br>
-            <span>  HTML5 | CSS3</span> <br>
-            <span> Bootstrap | MDBootstrap</span> <br>
-            <span> MongoDB | Mongo Atlas | Mongoose</span> <br>
-            <span> PostgreSQL</span> <br>
-            <span> Codepen | Postman</span> <br>
-            <span> VSCode | Sublime Text</span> <br>
-            <span> Git | Github | Terminal</span> <br>
-            <span> GitHub Page | Heroku</span>
-        </div>
-    </div>
-    <div class="thumbnail-container animated fadeInRight"> 
-        <div id='apppage' class='skill-box'>
-            <img src='./images/design2.png' alt='designing' />
-            <div class='skill-box-text'>DESIGNER</div>
-            <span style='font-weight:bold'>Design Areas</span>
-            <span> <br>
-                UX, UI, Website, Mobile, Apps, Logo, Consumer Products
-            </span> <br>
-            <br>
-            <span style='font-weight:bold'>Design Tools</span> <br>
-            <span> Figma</span> <br>
-            <span> Sketch</span> <br>
-            <span> InVision</span> <br>
-            <span> Adobe XD</span> <br>
-            <span> Pen | Paper | Marker</span> <br>
-            <span> Adobe Photosop</span> <br>
-            <span> Adobe Indesign</span> <br>
-            <span> Adobe Illustrator</span>
-        </div>
-    </div>
-</div>
-<div class='background-style'> </div>
-<!-- PROJECT SECTION -->
-<div class='project-wrapper'>
-    <div class='header'>
-        <div class='style-line'></div>
-        <h6>MY RECENT WORK</h6>
-    </div>
-    <div class='project-images-container'>
-        <div class=' animated fadeInUp'>
-            <div class='project-container'>
-                <img class='project-img' src='./images/p1.png' alt='project1-screenshot' />
-                <a href='https://ttidesign.github.io/GA-Project-1' target='blank'>
-                    <button class='view-project'>View Project</button>
-                </a>
-            </div>
-        </div>
-        <div class=' animated fadeInUp'>
-            <div class='project-container'>
-                <img class='project-img' src='./images/p2.png' alt='project2-screenshot' />
-                <a href='https://tk-movies-search.herokuapp.com/' target='blank'>
-                    <button class='view-project'>View Project</button>
-                </a>
-            </div>
-        </div>
-    </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Muli:wght@500&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Bootstrap core CSS -->
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<!-- Material Design Bootstrap -->
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css"
+			rel="stylesheet"
+		/>
+		<title>TK Website</title>
+	</head>
+	<body>
+		<!-- NAV SECTION -->
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<a class="navbar-brand" href="index.html">
+				<img class="logo" src="./images/TTiD-Wsmall.svg" alt="ttid logo" />
+			</a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarNav"
+				aria-controls="navbarNav"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html"
+							>Home <span class="sr-only">(current)</span></a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./pages/resume.html">Resume</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- INTRO SECTION -->
+		<div>
+			<div class="header">
+				<div class="style-line"></div>
+				<h6>SOFTWARE DEVELOPER | PRODUCT DESIGNER</h6>
+			</div>
+			<div class="about-me">
+				<p>Hello! My name is TK</p>
+				<p>
+					I’m a software developer with a background in product design, and I'm
+					confident that I can utilize both to become a better developer and a
+					better designer. I’m looking for an opportunity to apply my skills and
+					knowledge to develop intuitive websites and applications that enhance
+					functionality and improve user experience.
+				</p>
+			</div>
+		</div>
+		<!-- SKILLS SECTION -->
+		<div class="skills-wrapper">
+			<div class="thumbnail-container animated fadeInLeft">
+				<div id="apppage" class="skill-box">
+					<img src="./images/code2.png" alt="coding" />
+					<div class="skill-box-text">DEVELOPER</div>
+					<span style="font-weight: bold;">
+						Stacks & Programing Languages
+					</span>
+					<br />
+					<span>
+						Javascript, React, Python, Node.js, Express, Django
+					</span>
+					<br />
+					<br />
+					<span style="font-weight: bold;">
+						Developer Tools
+					</span>
+					<br />
+					<span> HTML5 | CSS3</span> <br />
+					<span> Bootstrap | MDBootstrap</span> <br />
+					<span> MongoDB | Mongo Atlas | Mongoose</span> <br />
+					<span> PostgreSQL</span> <br />
+					<span> Codepen | Postman</span> <br />
+					<span> VSCode | Sublime Text</span> <br />
+					<span> Git | Github | Terminal</span> <br />
+					<span> GitHub Page | Heroku</span>
+				</div>
+			</div>
+			<div class="thumbnail-container animated fadeInRight">
+				<div id="apppage" class="skill-box">
+					<img src="./images/design2.png" alt="designing" />
+					<div class="skill-box-text">DESIGNER</div>
+					<span style="font-weight: bold;">Design Areas</span>
+					<span>
+						<br />
+						UX, UI, Website, Mobile, Apps, Logo, Consumer Products
+					</span>
+					<br />
+					<br />
+					<span style="font-weight: bold;">Design Tools</span> <br />
+					<span> Figma</span> <br />
+					<span> Sketch</span> <br />
+					<span> InVision</span> <br />
+					<span> Adobe XD</span> <br />
+					<span> Pen | Paper | Marker</span> <br />
+					<span> Adobe Photosop</span> <br />
+					<span> Adobe Indesign</span> <br />
+					<span> Adobe Illustrator</span>
+				</div>
+			</div>
+		</div>
+		<div class="background-style"></div>
+		<!-- PROJECT SECTION -->
+		<div class="project-wrapper">
+			<div class="header">
+				<div class="style-line"></div>
+				<h6>MY RECENT WORK</h6>
+			</div>
+			<div class="project-images-container">
+				<div class="animated fadeInUp">
+					<div class="project-container">
+						<img
+							class="project-img"
+							src="./images/p1.png"
+							alt="project1-screenshot"
+						/>
+						<a href="https://ttidesign.github.io/GA-Project-1" target="blank">
+							<button class="view-project">View Project</button>
+						</a>
+					</div>
+				</div>
+				<div class="animated fadeInUp">
+					<div class="project-container">
+						<img
+							class="project-img"
+							src="./images/p2.png"
+							alt="project2-screenshot"
+						/>
+						<a href="https://tk-movies-search.herokuapp.com/" target="blank">
+							<button class="view-project">View Project</button>
+						</a>
+					</div>
+				</div>
+			</div>
 
-    <div class='project-images-container'>
-        <div class=' animated fadeInUp'>
-            <div class='project-container'>
-                <img class='project-img' src='./images//p3.png' alt='project3-screenshot' />
-                <a href='https://essentialcrm.herokuapp.com/' target='blank'>
-                    <button class='view-project'>View Project</button>
-                </a>
-            </div>
-        </div>
-        <div class=' animated fadeInUp'>
-            <div class='project-container'>
-                <img class='project-img' src='./images/p4.png' alt='project4-screenshot' />
-                <a href='https://swirl-project.herokuapp.com/' target='blank'>
-                    <button class='view-project'>View Project</button>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class='project-images-container-2'>
-        <div class=' animated fadeInUp'>
-            <div class='project-container-2'>
-                <img class='project-img-2' src='./images/p6.png' alt='project6-screenshot' />
-                <a href='/trade'>
-                <button class='view-project-2'>View Project</button>
-                </a>
-            </div>
-        </div>
-        <div class=' animated fadeInUp'>
-            <div class='project-container-2'>
-                <img class='project-img-2' src='./images/p8.png' alt='project8 screenshot' />
-                <a href='/nuu'>
-                <button class='view-project-2'>View Project</button>
-                </a>
-            </div>
-        </div>
-        <div class=' animated fadeInUp '>
-            <div class='project-container-2'>
-                <img class='project-img-2' src='./images/p7.png' alt='project7-screenshot' />
-                <a href='/swirl'>
-                <button class='view-project-2'>View Project</button>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- CONTACT SECTION -->
-<div>
-    <div class='style-line'></div>
-    <h6>CONTACTS</h6>
-    <p class='contact-info'>Please send me an email if you have any question</p>
-    <p class='contact-info'>Email - tkthedesigner@gmail.com</p>
-    <p class='contact-info'> or check out links below. Thank you</p>
-</div>
+			<div class="project-images-container">
+				<div class="animated fadeInUp">
+					<div class="project-container">
+						<img
+							class="project-img"
+							src="./images//p3.png"
+							alt="project3-screenshot"
+						/>
+						<a href="https://essentialcrm.herokuapp.com/" target="blank">
+							<button class="view-project">View Project</button>
+						</a>
+					</div>
+				</div>
+				<div class="animated fadeInUp">
+					<div class="project-container">
+						<img
+							class="project-img"
+							src="./images/p4.png"
+							alt="project4-screenshot"
+						/>
+						<a href="https://swirl-project.herokuapp.com/" target="blank">
+							<button class="view-project">View Project</button>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="project-images-container-2">
+				<div class="animated fadeInUp">
+					<div class="project-container-2">
+						<img
+							class="project-img-2"
+							src="./images/p6.png"
+							alt="project6-screenshot"
+						/>
+						<a href="/trade">
+							<button class="view-project-2">View Project</button>
+						</a>
+					</div>
+				</div>
+				<div class="animated fadeInUp">
+					<div class="project-container-2">
+						<img
+							class="project-img-2"
+							src="./images/p8.png"
+							alt="project8 screenshot"
+						/>
+						<a href="/nuu">
+							<button class="view-project-2">View Project</button>
+						</a>
+					</div>
+				</div>
+				<div class="animated fadeInUp">
+					<div class="project-container-2">
+						<img
+							class="project-img-2"
+							src="./images/p7.png"
+							alt="project7-screenshot"
+						/>
+						<a href="/swirl">
+							<button class="view-project-2">View Project</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- CONTACT SECTION -->
+		<div>
+			<div class="style-line"></div>
+			<h6>CONTACTS</h6>
+			<p class="contact-info">
+				Please send me an email if you have any question
+			</p>
+			<p class="contact-info">Email - tkthedesigner@gmail.com</p>
+			<p class="contact-info">or check out links below. Thank you</p>
+		</div>
 
-<!-- FOOTER SECTION -->
-<div class='icons'>
-    <a href='https://www.linkedin.com/in/tuongknguyen/' target='blank'>
-        <img class='small-logo' src='./images/linkedin 1x1.svg' alt='linkedin logo' />
-    </a>
-    <a href='https://github.com/ttidesign' target='blank'>
-        <img class='small-logo' src='./images/github 1x1.svg' alt='github logo' />
-    </a>
-    <a href='https://www.behance.net/KTDesign' target='blank'>
-        <img class='small-logo' src='./images/behance 1x1.svg' alt='behance logo' />
-    </a>
-    <a href='mailto:tkthedesigner@gmail.com'>
-        <img class='small-logo' src='./images/email 1x1.svg' alt='mailto:tkthedesigner@gmail.com' />
-    </a>
-</div>
+		<!-- FOOTER SECTION -->
+		<div class="icons">
+			<a href="https://www.linkedin.com/in/tuongknguyen/" target="blank">
+				<img
+					class="small-logo"
+					src="./images/linkedin 1x1.svg"
+					alt="linkedin logo"
+				/>
+			</a>
+			<a href="https://github.com/ttidesign" target="blank">
+				<img
+					class="small-logo"
+					src="./images/github 1x1.svg"
+					alt="github logo"
+				/>
+			</a>
+			<a href="https://www.behance.net/KTDesign" target="blank">
+				<img
+					class="small-logo"
+					src="./images/behance 1x1.svg"
+					alt="behance logo"
+				/>
+			</a>
+			<a href="mailto:tkthedesigner@gmail.com">
+				<img
+					class="small-logo"
+					src="./images/email 1x1.svg"
+					alt="mailto:tkthedesigner@gmail.com"
+				/>
+			</a>
+		</div>
 
-<!-- JQuery -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/js/mdb.min.js"></script>
-</body>
+		<!-- JQuery -->
+		<script
+			type="text/javascript"
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+		></script>
+		<!-- Bootstrap tooltips -->
+		<script
+			type="text/javascript"
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"
+		></script>
+		<!-- Bootstrap core JavaScript -->
+		<script
+			type="text/javascript"
+			src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"
+		></script>
+		<!-- MDB core JavaScript -->
+		<script
+			type="text/javascript"
+			src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/js/mdb.min.js"
+		></script>
+	</body>
 </html>
