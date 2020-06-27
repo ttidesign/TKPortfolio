@@ -1,0 +1,76 @@
+* {
+	background-color: rgb(39, 39, 39);
+	color: rgb(224, 223, 213);
+	font-family: 'Manrope';
+}
+body{background-color: rgb(39, 39, 39)!important;}
+header {
+	height: 50px;
+}
+h6 {
+	border-bottom: 1px solid rgb(39, 39, 39);
+	box-shadow: 3px 4px 6px black;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	font-family: 'Muli';
+	font-weight: lighter;
+}
+.style-line {
+	margin-top: 30px;
+	margin-bottom: 5px;
+	border-bottom: 0.3px solid rgba(224, 223, 213, 0.1);
+	box-shadow: 1px 3px 5px rgb(224, 223, 213);
+}
+.about-me {
+	max-width: 700px;
+	text-align: center;
+	margin: 20px auto;
+}
+
+.skills-wrapper {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100vw;
+	margin: 0 auto;
+	margin-top: 50px;
+	height: 166px;
+}
+.skill-box {
+	box-shadow: 2px 2px 8px black;
+	width: 250px;
+	text-align: center;
+	background-color: white;
+	color: rgb(39, 39, 39);
+	height: 530px;
+}
+.skill-box-text {
+	display: block;
+	margin: 7px auto;
+	background-color: white;
+	color: rgb(39, 39, 39);
+	font-weight: 600;
+}
+.background-style {
+	background-color: white;
+	height: 400px;
+}
+
+img {
+	width: 250px;
+	height: auto;
+	object-fit: contain;
+}
+span {
+	padding: 0 5px;
+	text-align: center;
+	background-color: white;
+	color: rgb(39, 39, 39);
+	font-size: 14px;
+}
+
+@media (min-width: 1366px) {
+	.skills-wrapper {
+		width: 1300px;
+	}
+}
