@@ -69,6 +69,66 @@ span {
 	font-size: 14px;
 }
 
+.project-images-container,
+.project-images-container-2 {
+	display: flex;
+	justify-content: space-around;
+	width: 850px;
+	margin: 70px auto;
+}
+
+.project-img,
+.project-img-2 {
+	width: 350px;
+	height: auto;
+	margin: 0 auto;
+	box-shadow: 3px 3px 8px black;
+}
+.project-img-2 {
+	width: 250px;
+}
+
+.project-container,
+.project-container-2 {
+	position: relative;
+	width: 350px;
+	margin: 0 auto;
+}
+
+.project-container-2 {
+	width: 250px;
+}
+
+.project-container button,
+.project-container-2 button {
+	opacity: 0;
+}
+.project-container:hover img,
+.project-container-2:hover img {
+	filter: grayscale(50%);
+	opacity: 0.5;
+}
+.project-container:hover button,
+.project-container-2:hover button {
+	opacity: 1;
+}
+
+.view-project,
+.view-project-2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 1px solid;
+	width: 120px;
+	height: 40px;
+	text-align: center;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+
 @media (min-width: 1366px) {
 	.skills-wrapper {
 		width: 1300px;
