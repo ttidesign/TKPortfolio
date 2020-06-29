@@ -1,15 +1,18 @@
 * {
 	background-color: rgb(39, 39, 39);
-	color: rgba(224, 223, 213,0.7);
+	color: rgba(224, 223, 213, 0.7);
 	font-family: 'Manrope';
 }
-body{background-color: rgb(39, 39, 39)!important;}
+body {
+	background-color: rgb(39, 39, 39) !important;
+}
 
 .navbar {
 	background-color: rgb(39, 39, 39);
 	box-shadow: none !important;
 }
-.nav-item{
+
+.nav-item {
 	opacity: 0.7;
 }
 
@@ -31,9 +34,11 @@ body{background-color: rgb(39, 39, 39)!important;}
 .logo:hover {
 	opacity: 1;
 }
+
 header {
 	height: 50px;
 }
+
 h6 {
 	border-bottom: 1px solid rgb(39, 39, 39);
 	box-shadow: 3px 4px 6px black;
@@ -43,12 +48,14 @@ h6 {
 	font-family: 'Muli';
 	font-weight: lighter;
 }
+
 .style-line {
 	margin-top: 30px;
 	margin-bottom: 5px;
 	border-bottom: 0.3px solid rgba(224, 223, 213, 0.1);
 	box-shadow: 1px 3px 5px rgb(224, 223, 213);
 }
+
 .about-me {
 	max-width: 700px;
 	text-align: center;
@@ -63,6 +70,7 @@ h6 {
 	margin-top: 50px;
 	height: 166px;
 }
+
 .skill-box {
 	box-shadow: 2px 2px 8px black;
 	width: 250px;
@@ -71,6 +79,7 @@ h6 {
 	color: rgb(39, 39, 39);
 	height: 530px;
 }
+
 .skill-box-text {
 	display: block;
 	margin: 7px auto;
@@ -78,6 +87,7 @@ h6 {
 	color: rgb(39, 39, 39);
 	font-weight: 600;
 }
+
 .background-style {
 	background-color: white;
 	height: 400px;
@@ -88,6 +98,7 @@ img {
 	height: auto;
 	object-fit: contain;
 }
+
 span {
 	padding: 0 5px;
 	text-align: center;
@@ -111,6 +122,7 @@ span {
 	margin: 0 auto;
 	box-shadow: 3px 3px 8px black;
 }
+
 .project-img-2 {
 	width: 250px;
 }
@@ -130,11 +142,13 @@ span {
 .project-container-2 button {
 	opacity: 0;
 }
+
 .project-container:hover img,
 .project-container-2:hover img {
 	filter: grayscale(50%);
 	opacity: 0.5;
 }
+
 .project-container:hover button,
 .project-container-2:hover button {
 	opacity: 1;
@@ -155,9 +169,11 @@ a {
 	text-decoration: none;
 	color: white;
 }
-.contact-info{
-    text-align: center;
+
+.contact-info {
+	text-align: center;
 }
+
 .icons {
 	border-top: 1px solid rgba(224, 223, 213, 0.3);
 	display: flex;
@@ -165,42 +181,168 @@ a {
 	padding-top: 10px;
 	margin: 10px auto;
 }
+
 .small-logo {
 	width: 30px;
 	margin: 5px 20px;
 	opacity: 0.7;
 }
+
 .small-logo:hover {
 	opacity: 1;
 }
 
-.resume{
-width:800px;
-margin: 0 auto;
-text-align: left;
-font-size: 14px;
+.resume {
+	width: 800px;
+	margin: 0 auto;
+	text-align: left;
+	font-size: 14px;
 }
 h6 {
 	box-shadow: 0px 4px 6px black;
 }
 
-.title{
-    font-weight: 600;
-    font-size: 17px;
-}
-.company{
-    font-style: italic;
+.title {
+	font-weight: 600;
+	font-size: 17px;
 }
 
-.spacer{
-    height:40px
+.company {
+	font-style: italic;
 }
+
+.spacer {
+	height: 40px;
+}
+
 .repo-link {
-    font-style: italic;
+	font-style: italic;
+}
+
+.presentation,
+.brief {
+	width: 950px;
+	margin: 50px auto;
+	font-size: 18px;
+}
+
+.image-presentation {
+	width: 950px;
+	box-shadow: 3px 3px 8px black;
+	opacity: 01;
+}
+
+.brief {
+	width: 950px;
+}
+
+.bottom-nav {
+	margin: 0 auto;
+	max-width: 950px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.small-icon {
+	width: 40px;
+	opacity: 0.5;
+	margin-bottom: 50px;
+}
+
+.small-icon:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.image-presentation {
+	background-color: white;
 }
 
 @media (min-width: 1366px) {
 	.skills-wrapper {
 		width: 1300px;
+	}
+}
+
+@media (max-width: 768px) {
+	h6 {
+		font-size: 14px;
+	}
+	.about-me {
+		font-size: 12px;
+		width: 80vw;
+		margin-bottom: 50px;
+	}
+
+	.logo {
+		width: 50px;
+		height: auto;
+	}
+
+	.skills-wrapper {
+		width: 90vw;
+		height: 188px;
+	}
+
+	.skill-box {
+		margin: 20px auto;
+	}
+
+	.skill-box-text {
+		width: 240px;
+	}
+
+	.project-images-container,
+	.project-images-container-2 {
+		max-width: 350px;
+		display: block;
+		margin: 5px auto;
+	}
+
+	.project-img,
+	.project-img-2 {
+		margin: 10px auto;
+	}
+
+	.resume {
+		width: 90vw;
+		font-size: 12px;
+	}
+
+	.title {
+		font-size: 14px;
+	}
+
+	.presentation,
+	.image-presentation,
+	.brief {
+		width: 350px;
+		height: auto;
+		font-size: 12px;
+		text-align: center;
+	}
+}
+
+@media (max-width: 414px) {
+	.skills-wrapper {
+		display: block;
+	}
+
+	.background-style {
+		height: 950px;
+		opacity: 0;
+	}
+
+	.project-images-container {
+		display: block;
+		width: 350px;
+		margin: 0 auto;
+	}
+	.resume {
+		width: 350px;
+		margin: 0 auto;
+	}
+	a {
+		font-size: 12px;
 	}
 }
